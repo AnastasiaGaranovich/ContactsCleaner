@@ -16,6 +16,8 @@
 		1BE0105626835A28008FF2B9 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BE0105526835A28008FF2B9 /* CustomCell.xib */; };
 		1BE010582683605F008FF2B9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE010572683605F008FF2B9 /* CustomCell.swift */; };
 		1BE0105C268368FA008FF2B9 /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0105B268368FA008FF2B9 /* ContactManager.swift */; };
+		1BE0105E2683B076008FF2B9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0105D2683B076008FF2B9 /* Utils.swift */; };
+		1BE010602683B418008FF2B9 /* ContactInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0105F2683B418008FF2B9 /* ContactInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		1BE0105526835A28008FF2B9 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		1BE010572683605F008FF2B9 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		1BE0105B268368FA008FF2B9 /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
+		1BE0105D2683B076008FF2B9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1BE0105F2683B418008FF2B9 /* ContactInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				1BE0105526835A28008FF2B9 /* CustomCell.xib */,
 				1BE010572683605F008FF2B9 /* CustomCell.swift */,
 				1BE0105B268368FA008FF2B9 /* ContactManager.swift */,
+				1BE0105D2683B076008FF2B9 /* Utils.swift */,
+				1BE0105F2683B418008FF2B9 /* ContactInfo.swift */,
 			);
 			path = ContactCleaner;
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 				1BE010582683605F008FF2B9 /* CustomCell.swift in Sources */,
 				1BE01042268357F1008FF2B9 /* AppDelegate.swift in Sources */,
 				1BE01044268357F1008FF2B9 /* SceneDelegate.swift in Sources */,
+				1BE0105E2683B076008FF2B9 /* Utils.swift in Sources */,
+				1BE010602683B418008FF2B9 /* ContactInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
