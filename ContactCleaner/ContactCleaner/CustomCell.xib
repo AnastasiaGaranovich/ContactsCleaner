@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CustomCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" id="RzD-eP-6VL" customClass="CustomCell" customModule="ContactCleaner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RzD-eP-6VL" id="nIu-J5-9aW">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ErB-Uu-XjZ">
+                        <rect key="frame" x="13" y="10" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="hhW-zA-XiP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhd-Hz-Z6c">
+                        <rect key="frame" x="67" y="17" width="41.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xij-b2-0V6">
+                        <rect key="frame" x="323" y="17" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ErB-Uu-XjZ" firstAttribute="leading" secondItem="nIu-J5-9aW" secondAttribute="leading" constant="13" id="Ed3-XJ-zhh"/>
+                    <constraint firstAttribute="bottom" secondItem="ErB-Uu-XjZ" secondAttribute="bottom" constant="10" id="Hco-jE-J4R"/>
+                    <constraint firstItem="ErB-Uu-XjZ" firstAttribute="top" secondItem="nIu-J5-9aW" secondAttribute="top" constant="10" id="IQM-S8-yqh"/>
+                    <constraint firstItem="Vhd-Hz-Z6c" firstAttribute="leading" secondItem="ErB-Uu-XjZ" secondAttribute="trailing" constant="19" id="b6c-kk-C5V"/>
+                    <constraint firstAttribute="bottom" secondItem="Vhd-Hz-Z6c" secondAttribute="bottom" constant="17" id="c55-dW-yC3"/>
+                    <constraint firstAttribute="trailing" secondItem="xij-b2-0V6" secondAttribute="trailing" constant="49" id="ffm-DP-H9f"/>
+                    <constraint firstItem="xij-b2-0V6" firstAttribute="centerY" secondItem="nIu-J5-9aW" secondAttribute="centerY" id="hvW-jh-SUw"/>
+                    <constraint firstItem="Vhd-Hz-Z6c" firstAttribute="top" secondItem="nIu-J5-9aW" secondAttribute="top" constant="17" id="jX7-Hz-ftN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countLabel" destination="xij-b2-0V6" id="zLl-3K-orl"/>
+                <outlet property="descriptionLabel" destination="Vhd-Hz-Z6c" id="zu6-yY-uHi"/>
+                <outlet property="icon" destination="ErB-Uu-XjZ" id="eLg-Dw-XUY"/>
+            </connections>
+            <point key="canvasLocation" x="240.57971014492756" y="30.803571428571427"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		1BE01042268357F1008FF2B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE01041268357F1008FF2B9 /* AppDelegate.swift */; };
 		1BE01044268357F1008FF2B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE01043268357F1008FF2B9 /* SceneDelegate.swift */; };
-		1BE01046268357F1008FF2B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE01045268357F1008FF2B9 /* ViewController.swift */; };
+		1BE01046268357F1008FF2B9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE01045268357F1008FF2B9 /* MainViewController.swift */; };
 		1BE01049268357F1008FF2B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE01047268357F1008FF2B9 /* Main.storyboard */; };
 		1BE0104B268357F3008FF2B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BE0104A268357F3008FF2B9 /* Assets.xcassets */; };
 		1BE0104E268357F3008FF2B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE0104C268357F3008FF2B9 /* LaunchScreen.storyboard */; };
+		1BE0105626835A28008FF2B9 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BE0105526835A28008FF2B9 /* CustomCell.xib */; };
+		1BE010582683605F008FF2B9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE010572683605F008FF2B9 /* CustomCell.swift */; };
+		1BE0105C268368FA008FF2B9 /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0105B268368FA008FF2B9 /* ContactManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BE0103E268357F1008FF2B9 /* ContactCleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactCleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE01041268357F1008FF2B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BE01043268357F1008FF2B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1BE01045268357F1008FF2B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BE01045268357F1008FF2B9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1BE01048268357F1008FF2B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BE0104A268357F3008FF2B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BE0104D268357F3008FF2B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BE0104F268357F3008FF2B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BE0105526835A28008FF2B9 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		1BE010572683605F008FF2B9 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		1BE0105B268368FA008FF2B9 /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				1BE01041268357F1008FF2B9 /* AppDelegate.swift */,
 				1BE01043268357F1008FF2B9 /* SceneDelegate.swift */,
-				1BE01045268357F1008FF2B9 /* ViewController.swift */,
+				1BE01045268357F1008FF2B9 /* MainViewController.swift */,
 				1BE01047268357F1008FF2B9 /* Main.storyboard */,
 				1BE0104A268357F3008FF2B9 /* Assets.xcassets */,
 				1BE0104C268357F3008FF2B9 /* LaunchScreen.storyboard */,
 				1BE0104F268357F3008FF2B9 /* Info.plist */,
+				1BE0105526835A28008FF2B9 /* CustomCell.xib */,
+				1BE010572683605F008FF2B9 /* CustomCell.swift */,
+				1BE0105B268368FA008FF2B9 /* ContactManager.swift */,
 			);
 			path = ContactCleaner;
 			sourceTree = "<group>";
@@ -126,6 +135,7 @@
 			files = (
 				1BE0104E268357F3008FF2B9 /* LaunchScreen.storyboard in Resources */,
 				1BE0104B268357F3008FF2B9 /* Assets.xcassets in Resources */,
+				1BE0105626835A28008FF2B9 /* CustomCell.xib in Resources */,
 				1BE01049268357F1008FF2B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BE01046268357F1008FF2B9 /* ViewController.swift in Sources */,
+				1BE0105C268368FA008FF2B9 /* ContactManager.swift in Sources */,
+				1BE01046268357F1008FF2B9 /* MainViewController.swift in Sources */,
+				1BE010582683605F008FF2B9 /* CustomCell.swift in Sources */,
 				1BE01042268357F1008FF2B9 /* AppDelegate.swift in Sources */,
 				1BE01044268357F1008FF2B9 /* SceneDelegate.swift in Sources */,
 			);
