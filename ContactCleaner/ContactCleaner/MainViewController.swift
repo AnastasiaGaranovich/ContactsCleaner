@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ContactsUI
 
 class MainViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -19,11 +20,26 @@ class MainViewController: UIViewController {
         ContactInfo(label: "No emails", icon: #imageLiteral(resourceName: "email"), countMethod: ContactManager.filterNoEmail)
     ]
     
-    let contacts = ContactManager.getContacts()
+    var contacts = [CNContact]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        getContacts()
+    }
+    
+    private func getContacts() {
+        switch ContactManager.getContacts() {
+        case .success(let contacts):
+            self.contacts = contacts
+            tableView.reloadData()
+        case .failure(let error):
+            settingsAlert(message: error.localizedDescription)
+        }
     }
 }
 

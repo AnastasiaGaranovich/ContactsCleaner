@@ -9,7 +9,7 @@ import Foundation
 import ContactsUI
 
 class ContactManager {
-    static func getContacts() -> [CNContact] {
+    static func getContacts() -> Result<[CNContact], Error> {
         
         let contactStore = CNContactStore()
         let keysToFetch = [
@@ -21,8 +21,8 @@ class ContactManager {
         var allContainers: [CNContainer] = []
         do {
             allContainers = try contactStore.containers(matching: nil)
-        } catch {
-            print("Error fetching containers")
+        } catch (let error) {
+            return .failure(error)
         }
         
         var results: [CNContact] = []
@@ -33,11 +33,11 @@ class ContactManager {
             do {
                 let containerResults = try contactStore.unifiedContacts(matching: fetchPredicate, keysToFetch: keysToFetch as! [CNKeyDescriptor])
                 results.append(contentsOf: containerResults)
-            } catch {
-                print("Error fetching containers")
+            } catch (let error) {
+                return .failure(error)
             }
         }
-        return results
+        return .success(results)
     }
     
     static func allContacts(contacts: [CNContact]) -> Int {
